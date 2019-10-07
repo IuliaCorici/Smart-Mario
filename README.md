@@ -1,29 +1,3 @@
-# BEST students Challenge
-
-This repository was created for the **BEST** students visiting the [Vrije Universiteit Brussel](https://www.vub.ac.be/). It contains a simplified Mario-like game, that is easily extensible, as well as an implementation of the [DQN](https://www.nature.com/articles/nature14236) algorithm, that can learn to play the game.
-
-## Installation
-
-- The code uses Python **3.7+**, if you don't have it on your machine, you can easily install it locally using [Miniconda](https://docs.conda.io/en/latest/miniconda.html).
-
-- Create your `conda` environment, and activate it:
-
-```bash
-conda create -n py37 python=3.7
-source activate py37
-```
-
-- Install all preliminary requirements:
-
-```bash
-pip install --user -r requirements.txt
-```
-
-- Install [PyTorch](https://pytorch.org/) for CPU only (for Python3.7):
-
-```bash
-pip install --user https://download.pytorch.org/whl/cpu/torch-1.1.0-cp37-cp37m-linux_x86_64.whl
-```
 
 ## Run the code
 
@@ -105,7 +79,3 @@ Every `GameObject` has an associated `GameSprite`, with the image representing t
 
 The main class is `Game`. The method that does most of the work is `update`: it updates every element of the game and shifts their position so that they stay visible on the screen.
 This is then called in the `step` method, which draws the current frame on the screen, and checks if the game terminates.
-
----
-
-It should be pretty straightforward to add elements like additional enemies, moving platforms, falling spikes...
